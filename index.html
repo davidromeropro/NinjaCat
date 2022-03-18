@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NinjaCat</title>
+</head>
+
+<body>
+    <div class="actions">
+        <input type="button" value="Start" onclick="startLoop()">
+        <input type="button" value="Stop" onclick="stopLoop()">
+        <input type="checkbox" name="changeDirection" id="changeDirection" checked onclick="changeDirection(this)">
+        <div class="slidecontainer">
+            <input type="range" min="1" max="500" value="100" class="slider" id="myRange" onchange="updateIntervalDelay(this)">
+        </div>
+
+    </div>
+    <div class="image-container">
+        <img id="image-0" class="imagen" src="assets/img/cat0.png" alt="cat part 0" onclick="changeImage(this)">
+        <img id="image-1" class="imagen" src="assets/img/cat1.png" alt="cat part 1" onclick="changeImage(this)">
+        <img id="image-2" class="imagen" src="assets/img/cat2.png" alt="cat part 1" onclick="changeImage(this)">
+        <img id="image-3" class="imagen" src="assets/img/cat3.png" alt="cat part 1" onclick="changeImage(this)">
+        <img id="image-4" class="imagen" src="assets/img/cat4.png" alt="cat part 1" onclick="changeImage(this)">
+    </div>
+
+    <img id="test" src="assets/img/cat2.png" alt="gato" onclick="testFunction(this)">
+    <img src="https://loremflickr.com/320/320" style="transform:rotate(90deg);">
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
